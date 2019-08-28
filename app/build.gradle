@@ -2,6 +2,12 @@ if (isDebug.toBoolean()){
     apply plugin: 'com.android.application'
 }else{
     apply plugin: 'com.android.library'
+    //启用Jitpack 插件
+    apply plugin: 'com.github.dcendents.android-maven'
+
+    //设置Jitpack发布的Group
+    //我的github账号是xykjandroid, 对应我的group就是com.github.xykjandroid
+    group='com.github.xykjandroid'
 }
 
 android {
